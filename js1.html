@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Örnek1</title>
+        <style>
+            .header
+            {
+                text-align: center;
+                background: crimson;
+                font-size: 18px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .container
+            {
+                text-align: center;
+                font-size: 30px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <h5>Örnek1 sayfası </h5>
+            <button onclick="tikla()">BUTON1</button><br>
+            <button onclick="this.innerHTML='BUTONA TIKLANDI'">BUTON2</button><br>
+            <button onclick="tikla3(this)">BUTON3</button><br>
+            <p id="p1">Paragraf</p><br>
+            <button onclick="renkDegistir(this)">BUTON4</button><br>
+            <button onmouseover="mouseover()" onmouseout="mouseout()">BUTON5</button><br>
+        
+            <form name="form1" action="gonder.php" method="POST" onsubmit= "dogrula();">
+                <input type="text" name="isim">
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+        <div class="container">
+
+        </div>
+    </body>
+    <script src="js1.js"></script>
+</html>
